@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>To-Do List App</title>
+
+
+</head>
+
+<body>
+  <div class="header">
+    <img src="volkovlogo.jpg" style="float: left;">
+    <p>The House of Volkov</p>
+  </div>
+  <div class="app">
+    <p style="font-size:18px; font-style:bold;">Special Exhibition To-Do List</p>
+    <input type="text" id="box" value="Type here to add task" />
+    <br />
+    <input type="button" value="Add item" onclick="addItem();" />
+    <br />
+    <div id="list"></div>
+  </div>
+  <script>
+    if (localStorage.storedList) {
+      loadList();
+    }
+  </script>
+</body>
+
+</html>
+
+
+Resources
